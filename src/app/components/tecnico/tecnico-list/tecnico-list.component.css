@@ -1,0 +1,43 @@
+.container{
+
+    margin: 15px;
+    
+}
+
+table {
+    width: 100%;
+
+}
+mat-form-field{
+    width: 100%;
+}
+.button-up{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 2rem;
+
+}
+.button-down{
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
+
+}
+.mat-mdc-raised-button.mat-create {
+    --mdc-protected-button-container-color: #417b50;
+    --mdc-protected-button-label-text-color: #fff;
+}
+.mat-mdc-raised-button.mat-update {
+    --mdc-protected-button-container-color: #ffd740;
+    --mdc-protected-button-label-text-color: #fff;
+    margin-right: 5px;
+}
+.mat-mdc-raised-button.mat-delete {
+    --mdc-protected-button-container-color: #b0423a;
+    --mdc-protected-button-label-text-color: #fff;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}

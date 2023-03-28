@@ -6,7 +6,7 @@
                 <i class="material-icons">home</i>
                 Home
             </a>
-            <a   routerLink="/">
+            <a   routerLink="/tecnicos">
                 <i class="material-icons">account_circle</i>
                 Ténicos
             </a>
@@ -18,7 +18,7 @@
                 <i class="material-icons">code</i>
                 Github
             </a>
-            <a   routerLink="/">
+            <a   (click)="logout()" >
                 <i class="material-icons">logout</i>
                 Logout
             </a>
@@ -26,6 +26,7 @@
     </mat-drawer>
 
     <div class="sidenav-content">
+        <app-header></app-header>
         <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
             <i class="material-icons">menu</i>
         </button>

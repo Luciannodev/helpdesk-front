@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from  '@angular/router';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +8,16 @@ import { Router } from  '@angular/router';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  constructor(private router:Router){}
-  
+  constructor(private router: Router,
+    private toast: ToastrService) { }
+
   ngOnInit(): void {
-    this.router.navigate(['home'])
+    this.router.navigate(['tecnicos/create'])
+  }
+
+  logout() {
+    this.router.navigate(['login'])
+    localStorage.clear()
+    this.toast.info("Logout realizado com sucesso", "logout", { timeOut: 7000 })
   }
 }
