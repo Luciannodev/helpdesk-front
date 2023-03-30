@@ -12,7 +12,7 @@ export class NavComponent implements OnInit {
     private toast: ToastrService) { }
 
   ngOnInit(): void {
-    this.router.navigate(['tecnicos/create'])
+    this.router.navigate(['tecnicos'])
   }
 
   logout() {

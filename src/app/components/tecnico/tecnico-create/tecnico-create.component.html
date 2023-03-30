@@ -4,14 +4,14 @@
     <h1 class="fullWidth">Cadastrar Ténico</h1>
     <img class="fullWidth" src="../../../../assets/tecnico-create.svg">
 
-    <section class="section">
+    <section class="section" required>
       <mat-checkbox class="rule" (click)="addPerfil(0)" color="primary">ADMIN</mat-checkbox>
       <mat-checkbox class="rule" (click)="addPerfil(1)" color="primary">TECNICO</mat-checkbox>
-      <mat-checkbox class="rule" (click)="addPerfil(2)" color="primary">CLIENTE</mat-checkbox>
+      <mat-checkbox class="rule" (click)="addPerfil(2)" color="primary" checked>CLIENTE</mat-checkbox>
     </section>
     <mat-form-field class="fullWidth" appearance="fill">
       <mat-label>Nome</mat-label>
-      <input [formControl]="nome" [(ngModel)]="tecnico.nome" matInput placeholder="Zezinho From Sase">
+      <input [formControl]="nome" type="text" [(ngModel)]="tecnico.nome" matInput placeholder="Zezinho From Sase">
       <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
     </mat-form-field>
 
@@ -24,7 +24,7 @@
 
     <mat-form-field class="fullWidth" appearance="fill">
       <mat-label>EMAIL</mat-label>
-      <input [formControl]="email" [(ngModel)]="tecnico.email" matInput placeholder="lotinha@hmail.com">
+      <input [formControl]="email" [(ngModel)]="tecnico.email" matInput placeholder="lotinha@hmail.com" type="email">
       <mat-icon matSuffix>mail</mat-icon>
     </mat-form-field>
 

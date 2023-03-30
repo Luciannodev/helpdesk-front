@@ -1,0 +1,42 @@
+<div class="container mat-elevation-z8">
+    <form class="form">
+  
+      <h1 class="fullWidth">Atualizar Ténico</h1>
+      <img class="fullWidth" src="../../../../assets/tecnico-create.svg">
+  
+      <section class="section" required>
+        <mat-checkbox class="rule" (click)="addPerfil(0)" color="primary">ADMIN</mat-checkbox>
+        <mat-checkbox class="rule" (click)="addPerfil(1)" color="primary">TECNICO</mat-checkbox>
+        <mat-checkbox class="rule" (click)="addPerfil(2)" color="primary">CLIENTE</mat-checkbox>
+      </section>
+      <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>Nome</mat-label>
+        <input [formControl]="nome" [(ngModel)]="tecnico.nome" matInput placeholder="Zezinho From Sase">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+  
+      <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>CPF</mat-label>
+        <input [formControl]="cpf" [(ngModel)]="tecnico.cpf" autocomplete="off" matInput placeholder="156.562.847-55"
+          mask="000.000.000-00" [dropSpecialCharacters]="false">
+        <mat-icon matSuffix>pin</mat-icon>
+      </mat-form-field>
+  
+      <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>EMAIL</mat-label>
+        <input [formControl]="email" [(ngModel)]="tecnico.email" matInput placeholder="lotinha@hmail.com">
+        <mat-icon matSuffix>mail</mat-icon>
+      </mat-form-field>
+  
+      <mat-form-field class="fullWidth" appearance="fill">
+        <mat-label>SENHA</mat-label>
+        <input [formControl]="password" [(ngModel)]="tecnico.senha" type="password" matInput
+          placeholder="senhaqueesqueci">
+        <mat-icon matSuffix>password</mat-icon>
+      </mat-form-field>
+      <div class="button-down">
+        <button (click)="update()" [disabled]="!validaCampos()" mat-raised-button color="create">ATUALIZAR</button>
+        <button routerLink="../../" mat-raised-button color="cancel">CANCELAR</button>
+      </div>
+    </form>
+  </div>

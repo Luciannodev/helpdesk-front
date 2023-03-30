@@ -1,0 +1,55 @@
+.container{
+    width: 35rem;
+    margin: auto;
+    padding: 1rem 1rem 3rem 1rem;
+    border-radius: .6rem;
+    }
+    
+    .fullWidth{
+        width: 100%;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    img{
+        height: 12rem;
+        align-items: center;
+    
+    }
+    .section{
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .button-down{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    
+    }
+    .mat-mdc-raised-button.mat-create {
+        width: 100%;
+        --mdc-protected-button-container-color: #417b50;
+        --mdc-protected-button-label-text-color: #fff;
+        margin-bottom: 1rem;
+    }
+    .mat-mdc-raised-button.mat-cancel {
+        width: 100%;
+        --mdc-protected-button-container-color: #b45740;
+        --mdc-protected-button-label-text-color: #fff;
+    }
+    .mat-mdc-checkbox.mat-primary {
+        --mdc-checkbox-selected-checkmark-color: #fff;
+        --mdc-checkbox-selected-focus-icon-color: #1E76D8;
+        --mdc-checkbox-selected-hover-icon-color: #1E76D8;
+        --mdc-checkbox-selected-icon-color: #1E76D8;
+        --mdc-checkbox-selected-pressed-icon-color: #1E76D8;
+    }
+    mat-icon{
+        opacity: 0.5; 
+    }
+    
