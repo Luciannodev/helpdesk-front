@@ -1,9 +1,6 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Para trabalhar com formulários no Angular
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // Para realizar requisições HTTP
@@ -32,8 +29,10 @@ import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
-import { NgxMaskDirective,NgxMaskPipe,provideNgxMask } from 'ngx-mask';
+
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
+import { NgModule } from '@angular/core';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 
 
 
@@ -55,7 +54,6 @@ import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecn
   ],
   imports: [
     AppRoutingModule,
-    BrowserAnimationsModule,
     // Forms
     FormsModule,
     ReactiveFormsModule,
